@@ -31,5 +31,14 @@ public class StringCalculatorTest {
 		assertThat(result, is(8));
 
 	}
+	
+	@Test
+	public void severalNumReturnsItsSum() {
+		StringCalculator c = new StringCalculator();
+		int result = c.add("5,8,0,2");
+
+		assertThat(result, is(15));
+
+	}
 
 }
